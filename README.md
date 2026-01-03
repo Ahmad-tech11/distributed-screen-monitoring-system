@@ -40,32 +40,27 @@ This project is designed as an academic and practical implementation of distribu
 
 ## 📁 Project Structure
 distributed-screen-monitoring-system/
-│
 ├── common/
 │ ├── init.py
 │ ├── config.py
 │ └── protocol.json
-│
 ├── master/
 │ ├── init.py
 │ ├── master_server.py
 │ ├── dashboard.py
 │ └── utils/
 │ └── image_decode.py
-│
 ├── worker/
 │ ├── init.py
 │ ├── worker_client.py
 │ ├── capture.py
 │ └── utils/
 │ └── compress.py
-│
 ├── start_master.bat
 ├── start_worker.bat
 ├── stop_all.bat
 ├── .gitignore
 └── README.md
-
 
 ---
 
