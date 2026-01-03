@@ -1,0 +1,23 @@
+{
+  "message_format": {
+    "frame": [
+      "4 bytes: header_length (big-endian integer)",
+      "header_bytes: JSON string (UTF-8)",
+      "payload_bytes: optional binary data (e.g., JPEG screenshot)"
+    ],
+    "header_common_fields": {
+      "type": "screenshot | command",
+      "worker_id": "string",
+      "timestamp": "float (epoch seconds)",
+      "payload_size": "int (bytes of payload)"
+    },
+    "screenshot_header_extra": {
+      "format": "jpeg",
+      "note": "payload contains compressed screenshot bytes"
+    },
+    "command_header_extra": {
+      "action": "change_interval",
+      "new_interval": "float (seconds)"
+    }
+  }
+}
